@@ -55,8 +55,12 @@ header {
     margin-right: 10px;
     width: 230px; 
     float: left;
-}
     
+}
+    .busca {
+         border-top-left-radius: 4px; 
+         border-top-right-radius: 4px;
+    }
 .busca h2,
 .busca form,
 .menu-conteudo h2 {
@@ -101,20 +105,26 @@ header {
     margin-top: 10px; 
 }
 
-.painel { 
+.painel  {  
     margin: 10px 0; 
     padding: 10px; 
     width: 35%; 
+    border-radius: 4px; 
+    box-shadow: 1px 1px 4px #999;
+
 }
 
 .aula1 { 
     float: left;
     background-color: #f5dcdc; 
+    background: linear-gradient(#f5dcdc, #bebef4);  
+    
 }
 
 .aula2 { 
     float: right;
     background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #f4bebe);
 }
 
 .painel li { 
@@ -123,13 +133,22 @@ header {
     width: 140px; 
     margin: 2px;
     padding-bottom: 10px;
+    
 }
-
+.painel li:hover {
+    box-shadow: 0 0 5px #333; 
+    transition: box-shadow 0.7s;  
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    transform: scale(1.2) rotate(-5deg);
+}
 .painel h2 { 
     font-size: 24px; 
     font-weight: bold; 
     text-transform: uppercase; 
     margin-bottom:10px; 
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 .painel a { 
@@ -186,12 +205,17 @@ header {
     color:#867dc6;
 }
 .menu-conteudo li ul {
-    display: none; /*por padrão escondida*/
+    display: none; 
    }
    .menu-conteudo li:hover ul {
-   display: block; /*no mouse aparece*/
+   display: block; 
    }
    .menu-conteudo ul ul li {
     background-color: #dcdcdc;
     }
 .menu-conteudo li li a:before {content: '- ';}
+
+.imagem-miniatura {
+    width: 100px; 
+    height: auto; 
+}
